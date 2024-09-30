@@ -14,6 +14,7 @@ class ClassSchedule:
 obj = ClassSchedule('anees','12','anees@gmail.com')
 
 obj.display()
+
 obj.gmail ="ikram@gmail.com" # can accees publically
 
 obj.display()
