@@ -46,6 +46,19 @@ def my_function():
     print(local_var)  # This works!
 
 my_function()
+```
+
+### Global Variable Example 🌍
+
+```python
+global_var = "I am global!"  # Global variable
+
+def my_function():
+    print(global_var)  # Accessible inside the function
+
+my_function()
+print(global_var)  # Still accessible here!
+
 print(local_var)  # ❌ Error! 'local_var' is not accessible here.
 
 
