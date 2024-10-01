@@ -1,5 +1,7 @@
 # Python 🐍 | Learn Python the Fun Way! 🎓💻
 
+![28376557](https://github.com/user-attachments/assets/84651b18-d2e7-448b-8555-28537a96dfc0)
+
 Welcome to the **Python** repository – a learning hub designed to make Python programming simple, engaging, and accessible to students of all levels! 🚀
 
 ---
