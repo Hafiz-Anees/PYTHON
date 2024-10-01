@@ -45,7 +45,6 @@ Here are some incredible things you can do with Python:
 
 Check out this amazing video to see Python in action:
 
-[![Python Video](https://example.com/video-thumbnail.jpg)](https://example.com/python-video-link)
 
 https://github.com/user-attachments/assets/ebfcd44c-5e01-4203-a871-e59eb1b00801
 
