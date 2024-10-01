@@ -51,15 +51,15 @@ my_function()
 ### Global Variable Example 🌍
 
 ```python
-global_var = "I am global!"  # Global variable
+x = "awesome"
 
-def my_function():
-    print(global_var)  # Accessible inside the function
+def myfunc():
+  global x
+  x = "fantastic"
 
-my_function()
-print(global_var)  # Still accessible here!
+myfunc()
 
-print(local_var)  # ❌ Error! 'local_var' is not accessible here.
+print("Python is " + x)
 
 
 
