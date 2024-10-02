@@ -28,23 +28,6 @@ This repository is designed to help **students** master Python with a hands-on a
 
 ---
 
-## Python in Action 🚀
-
-Here are some incredible things you can do with Python:
-
-1. **Data Science and Visualization**
-   📊 ![Python Data Science](https://example.com/data-science-image)
-3. **Web Development**
-   🌐 ![Python Web Development](https://example.com/web-dev-image)
-5. **Machine Learning**
-   🤖 ![Python Machine Learning](https://example.com/ml-image)
-7. **Automation and Scripting**
-   🔧 ![Python Automation](https://example.com/automation-image)
-
-Check out this amazing video to see Python in action:
-
-
-https://github.com/user-attachments/assets/ebfcd44c-5e01-4203-a871-e59eb1b00801
 
 ---
 
