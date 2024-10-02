@@ -60,5 +60,4 @@ Let's make learning Python a fun and interactive journey! 🎉
 
 Follow my work or reach out if you have any questions:
 
-- **GitHub:** [My Profile](https://github.com/your-profile)
-- **Email:** [your-email@example.com](mailto:your-email@example.com)
+- **GitHub:** [My Profile](https://github.com/Hafiz-Anees)
