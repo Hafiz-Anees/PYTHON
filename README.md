@@ -28,6 +28,7 @@ This repository is designed to help **students** master Python with a hands-on a
 
 ---
 
+https://github.com/user-attachments/assets/8e67ca91-5651-48cf-b895-6d3c661095ef
 
 ---
 
