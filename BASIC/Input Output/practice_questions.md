@@ -1,4 +1,6 @@
-# write a program to get day , month and year from user and print in this format 29-09-2023
+## 1-write a program to get day , month and year from user and print in this format 29-09-2023.
+
+- Solution
 
 ```python
 day = input("Enter day (DD): ")
