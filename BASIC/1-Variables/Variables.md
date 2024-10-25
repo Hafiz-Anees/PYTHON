@@ -5,7 +5,7 @@ Variables are temporary storage spaces used to hold data values, which can chang
 
 https://github.com/user-attachments/assets/6337a422-2dbb-482a-b840-6ad5b4ec0bc8
 
-- **Naming Rules**:
+- **Naming Rules For Variables**:
   - Must start with a **letter** or an **underscore (_)**:
     ```python
     my_variable = 10
