@@ -34,11 +34,47 @@ Write a program that generates the Fibonacci sequence up to a given number of te
 
 ### Pyramid Pattern
 
+         *
+        ***
+       *****
+      *******
+     *********
+### Right-Angle Triangle Pattern
+
       *
-     ***
-    *****
-   *******
-  *********
+      **
+      ***
+      ****
+      *****
+
+### inverted Triangle
+      
+      *****
+      ****
+      ***
+      **
+      *
+      
+### Diamond Pattern
+
+          *
+         ***
+        *****
+       *******
+      *********
+       *******
+        *****
+         ***
+          *
+
+### Number Pyramid Pattern
+      
+          1
+         1 2
+        1 2 3
+       1 2 3 4
+      1 2 3 4 5
+
 
 
 
