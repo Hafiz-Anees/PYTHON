@@ -1,6 +1,7 @@
 # Intermediate Python Looping Questions
 
 1. **Factorial Calculation**
+
    Write a program that calculates the factorial of a given number using a `while` loop.
 
 3. **Sum of Even Numbers**  
