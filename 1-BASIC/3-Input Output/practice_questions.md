@@ -29,7 +29,7 @@ print(day, "-", month, "-", year)
 ```
 
 ## 2. Greet the User
-probelm statement : Take the user's name as input and print a greeting message.
+`probelm statement` : Take the user's name as input and print a greeting message.
 
 **Example:**
 
@@ -41,8 +41,8 @@ Hello, Anees!
 
 ---
 
-## 2. Full Name Formatter  
-probelm statement: Take first name and last name as input and print the full name.
+## 3. Full Name Formatter  
+`probelm statement`: Take first name and last name as input and print the full name.
 
 Input:
 anees
@@ -53,8 +53,8 @@ Full Name: anees Rehman
 
 ---
 
-## 3. Simple Address Label  
-probelm statement: Take name, city, and country from the user and print complete detail of a person.
+## 4. Simple Address Label  
+`probelm statement`: Take name, city, and country from the user and print complete detail of a person.
 
 Input:
 Ali
@@ -68,8 +68,8 @@ name : Ali
 city : Lahore
 country: Pakistan
 
-## 4. Add Three Numbers  
-problem statement : Take three numbers as input and print their sum.
+## 5. Add Three Numbers  
+`problem statement` : Take three numbers as input and print their sum.
 
 ---
 
@@ -84,8 +84,8 @@ Sum is: 15
 
 ---
 
-## 5. Math Sentence  
-problem statement: Take two numbers and an operator (+, -, *,/,%) and perform operation.
+## 6. Math Sentence  
+`problem statement`: Take two numbers and an operator (+, -, *,/,%) and perform operation.
 
 **Example:**
 
@@ -98,13 +98,13 @@ output:
 0
 ---
 
-## 6. Area of a Rectangle  
-Take length and width as input and calculate the area.
+## 7. Area of a Rectangle  
+`problem statement` : Take length and width as input and calculate the area.
 
 ---
 
-## 7. Average of Five Numbers  
-Take five numbers as input and print their average.
+## 8. Average of Five Numbers  
+`problem statement`: Take five numbers as input and print their average.
 
 **Example:**
 
@@ -122,8 +122,8 @@ Average is: 30.0
 
 ---
 
-## 8. Convert Celsius to Fahrenheit  
-Take temperature in Celsius and convert it to Fahrenheit using the formula:  
+## 9. Convert Celsius to Fahrenheit  
+`problem statement`: Take temperature in Celsius and convert it to Fahrenheit using the formula:  
 **F = (C × 9/5) + 32**
 
 **Example:**
@@ -138,8 +138,8 @@ Temperature in Fahrenheit: 77.0
 
 ---
 
-## 9. Area of a Circle  
-Take radius as input and calculate the area of the circle. Use **3.14** for π.
+## 10. Area of a Circle  
+`problem statement`: Take radius as input and calculate the area of the circle. Use **3.14** for π.
 
 **Example:**
 
@@ -152,8 +152,8 @@ Area of circle: 153.86
 
 ---
 
-## 10. Percentage Calculator  
-Take marks obtained and total marks, and print the percentage.
+## 11. Percentage Calculator  
+`problem statement`: Take marks obtained and total marks, and print the percentage.
 
 **Example:**
 
@@ -168,8 +168,8 @@ Percentage: 90.0%
 
 ---
 
-## 7. Simple Interest Calculator  
-Take principal, rate, and time as input and calculate simple interest using:  
+## 12. Simple Interest Calculator  
+`problem statement`: Take principal, rate, and time as input and calculate simple interest using:  
 **Interest = (Principal × Rate × Time) / 100**
 
 **Example:**
