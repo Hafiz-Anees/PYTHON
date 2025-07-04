@@ -1,13 +1,4 @@
-## 1-write a program to get day , month and year from user and print in this format 29-09-2023.
 
-- Solution
-
-```python
-day = input("Enter day (DD): ")
-month = input("Enter month (MM): ")
-year = input("Enter year (YYYY): ")
-
-print(day, "-", month, "-", year)
 ```
 
 # 🧠 Simple `input()` and `print()` Practice Problems
@@ -29,7 +20,7 @@ print(day, "-", month, "-", year)
 ```
 
 ## 2. Greet the User
-```probelm statement``` : Take the user's name as input and print a greeting message.
+<p style="color:red">problem statement<\p> : Take the user's name as input and print a greeting message.
 
 **Example:**
 
