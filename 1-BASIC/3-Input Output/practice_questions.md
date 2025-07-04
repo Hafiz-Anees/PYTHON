@@ -29,7 +29,7 @@ print(day, "-", month, "-", year)
 ```
 
 ## 2. Greet the User
-`probelm statement` : Take the user's name as input and print a greeting message.
+```probelm statement``` : Take the user's name as input and print a greeting message.
 
 **Example:**
 
