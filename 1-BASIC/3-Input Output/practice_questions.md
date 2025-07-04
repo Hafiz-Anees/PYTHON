@@ -20,7 +20,7 @@ print(day, "-", month, "-", year)
 ```
 
 ## 2. Greet the User
-<p style="color:red">problem statement<\p> : Take the user's name as input and print a greeting message.
+<p style="color:red">problem statement</p> : Take the user's name as input and print a greeting message.
 
 **Example:**
 
@@ -33,7 +33,7 @@ Hello, Anees!
 ---
 
 ## 3. Full Name Formatter  
-`probelm statement`: Take first name and last name as input and print the full name.
+<p style="color:red">problem statement</p> : Take first name and last name as input and print the full name.
 
 Input:
 anees
@@ -45,7 +45,7 @@ Full Name: anees Rehman
 ---
 
 ## 4. Simple Address Label  
-`probelm statement`: Take name, city, and country from the user and print complete detail of a person.
+<p style="color:red">problem statement</p> : Take name, city, and country from the user and print complete detail of a person.
 
 Input:
 Ali
