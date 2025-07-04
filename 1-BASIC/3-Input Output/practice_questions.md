@@ -20,7 +20,7 @@ print(day, "-", month, "-", year)
 ```
 
 ## 2. Greet the User
-<p style="color:red">problem statement</p> : Take the user's name as input and print a greeting message.
+<span style="color:red">problem statement</span> : Take the user's name as input and print a greeting message.
 
 **Example:**
 
