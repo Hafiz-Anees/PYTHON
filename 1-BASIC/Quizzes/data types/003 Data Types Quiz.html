@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+
+    <style>
+      body {
+        font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto,
+          segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+          segoe ui emoji, segoe ui symbol;
+        font-weight: 400;
+        line-height: 22.4px;
+        font-size: 16px;
+      }
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      ul,
+      ol {
+        font-size: 16px;
+        font-weight: 400;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-width: none;
+      }
+      code {
+        background-color: #fff;
+        border: 1px solid #d1d7dc;
+        color: #b4690e;
+        font-size: 90%;
+        padding: 0.2rem 0.4rem;
+      }
+      .quiz-content {
+        padding: 2.4rem;
+        word-break: break-word;
+        max-width: 86rem;
+        margin: 0 auto;
+      }
+      .quiz-container {
+        margin: 0 auto;
+        max-width: 84rem;
+        padding: 0;
+      }
+      .question {
+        margin-bottom: 5rem;
+      }
+      .question span {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .question-prompt {
+        margin-top: 0.8rem;
+        font-weight: 700;
+      }
+      .question-answer {
+        margin-top: 1.6rem;
+        padding-left: 0;
+        box-sizing: border-box;
+      }
+      .question-answer label {
+        max-width: 80rem;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        min-width: 18rem;
+        border: solid #1c1d1f 2px;
+      }
+      .question-answer div {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        width: 100%;
+      }
+      .question-answer div:hover {
+        background-color: #f5f5f5;
+      }
+      .question-answer input {
+        display: none;
+      }
+      .question-answer span {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 1.6rem;
+        top: 0;
+        border-radius: 50%;
+        display: inline-block;
+        flex-shrink: 0;
+        border: 0.2rem solid #1c1d1f;
+        position: relative;
+      }
+      .selected {
+        background: #1c1d1f;
+        box-shadow: 0 0 0 0.4rem #fff inset;
+      }
+      .score {
+              position: fixed;
+            }
+    </style>
+  </head>
+
+  <body onload="main()">
+    <div id="score" class="score">
+      <span>Score: N/A of N/A</span>
+    </div>
+    <div id="quiz-container" class="quiz-content"></div>
+
+    <script>
+      const quizData = {"pass_percent": 70, "questions": [{"_class": "assessment", "id": 14918338, "assessment_type": "multiple-choice", "prompt": {"question": "<p>Which statement below is <strong>incorrect</strong>?</p>", "relatedLectureIds": ["17841340"], "feedbacks": ["This is a whole number, which is known in programming as an int or integer.", "\"False\" is a String, not a boolean. Booleans are either True or False. Booleans don't have quotation marks around them, otherwise it would turn them into a String.  So it should be bool = False", "The data type of the value is a float, because it has a decimal point.", "Even though the value contains numbers, because it's inside quotation marks, it's still a String."], "answers": ["<p><code>932</code> is an Integer</p>", "<p><code>\"False\"</code> is a Boolean</p>", "<p><code>857.25</code> is a Float</p>", "<p><code>\"523\"</code> is a String</p>"]}, "correct_response": ["b"], "section": "", "question_plain": "Which statement below is incorrect?", "related_lectures": [{"_class": "lecture", "id": 17841340, "title": "Python Primitive Data Types", "created": "2020-01-28T15:36:56Z", "is_published": true, "asset": {"_class": "asset", "id": 58280269, "asset_type": "Video", "title": "2.1 Basic Data Types.mp4", "created": "2024-08-02T11:35:18Z"}, "object_index": 14, "url": "/course/100-days-of-code/learn/lecture/17841340"}]}, {"_class": "assessment", "id": 14918392, "assessment_type": "multiple-choice", "prompt": {"relatedLectureIds": ["17841340"], "answers": ["<p>Integer</p>", "<p>String</p>", "<p>Qurtle</p>", "<p>Float</p>"], "question": "<p>What is the data type of the <code>mystery</code> variable?</p><p><code>mystery = 734_529.678</code> </p>", "feedbacks": ["This is not an integer because it's not a whole number. Whole numbers look like this 734_529 which is the same as 734529", "This is not a String because Strings always have quotes around them. e.g. \"734_529\"", "This is a word I just made up. It's not a data type. ", "Correct! Even though the underscore is there to make the large number more readable, because there is a decimal point it is still a Float. If you printed the number in your code, it would be stripped down to 734529.678"]}, "correct_response": ["d"], "section": "", "question_plain": "What is the data type of the mystery variable?mystery = 734_529.678", "related_lectures": [{"_class": "lecture", "id": 17841340, "title": "Python Primitive Data Types", "created": "2020-01-28T15:36:56Z", "is_published": true, "asset": {"_class": "asset", "id": 58280269, "asset_type": "Video", "title": "2.1 Basic Data Types.mp4", "created": "2024-08-02T11:35:18Z"}, "object_index": 14, "url": "/course/100-days-of-code/learn/lecture/17841340"}]}, {"_class": "assessment", "id": 14918466, "assessment_type": "multiple-choice", "prompt": {"question": "<p>I've put a spell on you. You are now a computer. If I give you the following code, what will you print out?</p><pre class=\"prettyprint linenums\">street_name = \"Abbey Road\"\nprint(street_name[4] + street_name[7])</pre>", "relatedLectureIds": ["17841340"], "feedbacks": ["Remember that programmers start counting from 0! To print eR the code would be print(street_name[3] + street_name[6])", "The [4] is not a repeat function. It's getting a value out of the string in front. e.g. \"Hello\"[0]  is \"H\"", "[4] is not applied on the name of the variable (street_name) but the value held in the variable (\"Abbey Road\")", "Yo, you did it! ", "The empty space \u201c \u201c between \u201cAbbey\u201d and \u201cRoad\u201d also counts as a character. To get \u201cya\u201d the print statement would have to read:  print(street_name[4] + street_name[8])"], "answers": ["<p>eR</p>", "<pre class=\"prettyprint linenums\">\"Abbey Road\"\n\"Abbey Road\"\n\"Abbey Road\"\n\"Abbey Road\"\n\n\"Abbey Road\"\n\"Abbey Road\"\n\"Abbey Road\"\n\"Abbey Road\"\n\"Abbey Road\"\n\"Abbey Road\"\n\"Abbey Road\"</pre>", "<p>en</p>", "<p>yo</p>", "<p>ya</p>"]}, "correct_response": ["d"], "section": "", "question_plain": "I've put a spell on you. You are now a computer. If I give you the following code, what will you print out?street_name = \"Abbey Road\"\nprint(street_name[4] + street_name[7])", "related_lectures": [{"_class": "lecture", "id": 17841340, "title": "Python Primitive Data Types", "created": "2020-01-28T15:36:56Z", "is_published": true, "asset": {"_class": "asset", "id": 58280269, "asset_type": "Video", "title": "2.1 Basic Data Types.mp4", "created": "2024-08-02T11:35:18Z"}, "object_index": 14, "url": "/course/100-days-of-code/learn/lecture/17841340"}]}]};
+      var correct = 0;
+      var total = 0;
+      const questionData = quizData.questions
+      const passPercent = quizData.pass_percent
+
+      function main() {
+        total = questionData.length;
+
+        var questions = [];
+        for (var i = 0; i < questionData.length; i++) {
+          var question = questionData[i];
+          var questionText = question.prompt.question;
+          var answers = question.prompt.answers;
+          var correctAnswer = question.correct_response[0];
+          var correctAnswerText = answers[correctAnswer.charCodeAt(0) - 97];
+          var questionObj = {
+            question: questionText,
+            correctAnswer: correctAnswerText,
+            answers: answers,
+            id: question.id,
+          };
+          questions.push(questionObj);
+        }
+
+        updateScore();
+
+        // display the questions
+        var questionsContainer = document.getElementById("quiz-container");
+        for (var i = 0; i < questions.length; i++) {
+          var question = questions[i];
+          var questionElement = document.createElement("form");
+          questionElement.className = "question";
+          questionElement.innerHTML =
+            "<span>Question " +
+            (i + 1) +
+            ":</span>" +
+            '<div class="question-prompt">' +
+            question.question +
+            "</div>";
+          questionElement.id = question.id;
+          questionElement.classList.add("quiz-container");
+          var answersElement = document.createElement("ul");
+          answersElement.className = "answers";
+          for (var j = 0; j < question.answers.length; j++) {
+            var answer = question.answers[j];
+            var answerElement = document.createElement("li");
+            answerElement.className = "answer";
+            answerElement.innerHTML =
+              '<label for="input-' +
+              question.id +
+              "-" +
+              j +
+              '"><div onclick="select(' +
+              question.id +
+              ", " +
+              j +
+              ')"><span></span><input id="input-' +
+              question.id +
+              "-" +
+              j +
+              '" type="radio" name="question' +
+              i +
+              '" value="' +
+              j +
+              '">' +
+              answer +
+              "</input></div></label>";
+            answerElement.classList.add("question-answer");
+            answersElement.appendChild(answerElement);
+          }
+
+          questionElement.appendChild(answersElement);
+
+          // add a submit button
+          var submitButton = document.createElement("button");
+          submitButton.className = "submit";
+          submitButton.innerHTML = "Submit";
+          submitButton.classList.add("submit-button");
+
+          submitButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            var questionElement = e.target.parentElement;
+            var questionId = questionElement.id;
+            var question = questions.filter(function (q) {
+              return q.id == questionId;
+            })[0];
+
+            // set the border color of all answers to black
+            var answers = questionElement.getElementsByClassName("answer");
+            for (var i = 0; i < answers.length; i++) {
+              console.log(answers[i]);
+              answers[i].children[0].style.borderColor = "#1c1d1f";
+            }
+
+            var answer = questionElement.querySelector(
+              'input[type="radio"]:checked'
+            );
+            if (answer) {
+              var answerIndex = answer.value;
+              var answerText = question.answers[answerIndex];
+              if (answerText == question.correctAnswer) {
+                answer.parentElement.parentElement.style.borderColor =
+                  "limegreen";
+                // alert("Correct!");
+                correct++;
+                updateScore();
+              } else {
+                answer.parentElement.parentElement.style.borderColor = "red";
+                // alert("Incorrect!");
+              }
+            } else {
+              alert("Please select an answer.");
+            }
+          });
+
+          // add button
+          questionElement.appendChild(submitButton);
+
+          questionsContainer.appendChild(questionElement);
+        }
+      }
+
+      function select(question, answer) {
+        var questionElement = document.getElementById(question);
+        var answers = questionElement.getElementsByClassName("answer");
+        for (var i = 0; i < answers.length; i++) {
+          var span = answers[i].children[0].children[0].children[0];
+          var input = answers[i].children[0].children[0].children[1];
+          span.classList.remove("selected");
+          input.checked = false;
+        }
+        var span = answers[answer].children[0].children[0].children[0];
+        var input = answers[answer].children[0].children[0].children[1];
+        span.classList.add("selected");
+        input.checked = true;
+      }
+
+      function updateScore() {
+        var scoreElem = document.getElementById("score");
+        const score = (correct / total) * 100;
+        scoreElem.innerHTML = "Score: " + score + "/" + passPercent + "%";
+      }
+    </script>
+  </body>
+</html>
