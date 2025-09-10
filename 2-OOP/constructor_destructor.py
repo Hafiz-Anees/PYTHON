@@ -8,6 +8,7 @@ class ClassSchedule:
   
    def __del__(self):
        print('Destructor called')
+       
    def display(self):
        print(f"{self.__name},{self._age},{self.gmail}")
        
