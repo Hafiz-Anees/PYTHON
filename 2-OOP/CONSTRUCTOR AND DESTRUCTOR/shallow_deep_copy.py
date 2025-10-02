@@ -20,9 +20,7 @@ Changes in the deep copy do NOT affect the original.
 """
 
 
-
 import copy
-
 class Student:
     def __init__(self, name, marks):
         self.name = name
